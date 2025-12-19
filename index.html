@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora Moderna</title>
+        <meta
+            name="description"
+            content="Uma calculadora simples e elegante feita com HTML, CSS e JavaScript."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1>Calculadora JavaScript</h1>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="calculator-section">
+                <div class="calculator-card">
+                    <div class="calculator">
+                        <h2 class="calculator-title">Calculadora</h2>
+
+                        <div class="calculator-history" id="history"></div>
+
+                        <input
+                            type="text"
+                            class="calculator-screen"
+                            id="screen"
+                            disabled
+                            placeholder="0"
+                        />
+
+                        <div class="calculator-keys">
+                            <button class="key clear" data-action="clear">
+                                AC
+                            </button>
+                            <button class="key operator" data-value="/">
+                                ÷
+                            </button>
+                            <button class="key operator" data-value="*">
+                                ×
+                            </button>
+
+                            <button class="key operator" data-action="delete">
+                                ⌫
+                            </button>
+
+                            <button class="key" data-value="7">7</button>
+                            <button class="key" data-value="8">8</button>
+                            <button class="key" data-value="9">9</button>
+                            <button class="key operator" data-value="-">
+                                −
+                            </button>
+
+                            <button class="key" data-value="4">4</button>
+                            <button class="key" data-value="5">5</button>
+                            <button class="key" data-value="6">6</button>
+                            <button class="key operator" data-value="+">
+                                +
+                            </button>
+
+                            <button class="key" data-value="1">1</button>
+                            <button class="key" data-value="2">2</button>
+                            <button class="key" data-value="3">3</button>
+                            <button class="key equal" data-action="calculate">
+                                =
+                            </button>
+
+                            <button class="key zero" data-value="0">0</button>
+                            <button class="key" data-value=".">,</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2>Sobre esta calculadora</h2>
+                    <p>
+                        Esta é uma calculadora básica com operações de soma,
+                        subtração, multiplicação e divisão. Foi criada como um
+                        projeto simples para praticar HTML, CSS e JavaScript
+                        vanilla.
+                    </p>
+                    <p>
+                        O design é inspirado em interfaces modernas, com tema
+                        escuro e efeitos sutis de interação.
+                    </p>
+                    <p>
+                        <strong>Funcionalidades:</strong>
+                    </p>
+                    <ul>
+                        <li>Operações básicas (+ − × ÷)</li>
+                        <li>Limpar tela (AC)</li>
+                        <li>Apagar último dígito (⌫)</li>
+                        <li>Suporte a vírgula decimal</li>
+                        <li>Histórico da expressão no topo</li>
+                        <li>Totalmente responsiva</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Maranzatto. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
